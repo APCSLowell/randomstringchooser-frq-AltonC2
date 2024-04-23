@@ -18,6 +18,10 @@ values[i] = vals[i];
 if (valuesRemaining==0)
 	return  "NONE";
 			int index = (int) (Math.random()*valuesRemaining)
+				String selected = values[index];
+			values[index] = values[valuesRemaining-1];
+			valuesRemaining--;
+			return selected;
 		}
 	}
 	
